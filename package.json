@@ -1,0 +1,35 @@
+{
+  "name": "@fabric/meshtastic",
+  "version": "0.1.0-RC1",
+  "description": "Fabric Protocol over radio",
+  "main": "services/meshtastic.js",
+  "scripts": {
+    "report:install": "rm -rf node_modules && echo \"\n\" > package-lock.json && echo \"$ npm i\" > reports/install.log && npm i >> reports/install.log",
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabricLabs/fabric-meshtastic.git"
+  },
+  "keywords": [
+    "fabric",
+    "bitcoin",
+    "mesh",
+    "meshtastic",
+    "peer",
+    "peer",
+    "to",
+    "peer",
+    "p2p"
+  ],
+  "author": "Fabric Labs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FabricLabs/fabric-meshtastic/issues"
+  },
+  "homepage": "https://github.com/FabricLabs/fabric-meshtastic#readme",
+  "dependencies": {
+    "@fabric/core": "FabricLabs/fabric#feature/v0.1.0-RC1",
+    "@meshtastic/js": "2.2.18-0"
+  }
+}
